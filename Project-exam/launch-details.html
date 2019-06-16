@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space technology</title>
+        <link href="style/projectexam.css" type="text/css" rel="stylesheet">
+        <script src="js/projectexam.js" type="text/javascript"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2asb4NY7YZ0KZ3Z_Yd0dfJ-3o19YbX08&callback=initMap"></script>
+        <script>
+          window.onload = getLaunchDetails;
+        </script>
+    </head>
+    <body>
+        <div>
+            <nav class="nav">
+                <ul class="menu">
+                    <h1 class="logo">Space Technology</h1>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="livefeed.html">LIVE FEED</a></li>
+                    <li><a href="launch.html" class="active">LAUNCH</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="content">
+          <div id="countdown">
+            <div class="countdown-wrapper">
+              <div id="dayshundred" class="countdown-number">0</div>
+              <div id="daysten" class="countdown-number">0</div>
+              <div id="days" class="countdown-number">0</div>
+              <div class="countdown-label">d &nbsp;</div>
+              <div id="hoursten" class="countdown-number">0</div>
+              <div id="hours" class="countdown-number">0</div>
+              <div class="countdown-label">:</div>
+              <div id="minutesten" class="countdown-number">0</div>
+              <div id="minutes" class="countdown-number">0</div>
+              <div class="countdown-label">:</div>
+              <div id="secondsten" class="countdown-number">0</div>
+              <div id="seconds" class="countdown-number">0</div>
+            </div>
+          </div>
+          <div id="launch-details">
+            <h3 id="mission-name"></h3>
+            <h5 id="launch-date"></h5>
+            <p id="mission-description"></p>
+          </div>
+          <div id="rocket-details">
+            <h3 id="rocket-name"></h3>
+            <img id="rocket-picture">
+            <p id="rocket-description"></p>
+          </div>
+          <div id="site-details">
+            <h3 id="site-name"></h3>
+            <h5 id="region"></h5>
+            <div id="launch-site-map"></div>
+          </div>
+        </div>
+    </body>
+</html>
